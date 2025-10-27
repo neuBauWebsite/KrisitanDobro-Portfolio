@@ -1,0 +1,191 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+    background-color: #fafafa;
+    color: #333;
+    line-height: 1.6;
+}
+
+.header {
+    background-color: #fff;
+    border-bottom: 1px solid #e0e0e0;
+    padding: 2rem 0;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.header-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2rem;
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.logo {
+    height: 60px;
+    width: auto;
+    display: block;
+}
+
+.header-text {
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+}
+
+.name {
+    font-size: 1.75rem;
+    font-weight: 600;
+    color: #1a1a1a;
+    letter-spacing: -0.02em;
+}
+
+.contact-email {
+    font-size: 0.95rem;
+    color: #666;
+    font-weight: 400;
+    margin: 0;
+}
+
+.contact-phone {
+    font-size: 0.95rem;
+    color: #666;
+    font-weight: 400;
+    margin: 0;
+}
+
+.main-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 3rem 2rem;
+}
+
+.section-title {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #1a1a1a;
+    margin-bottom: 2rem;
+    letter-spacing: -0.01em;
+}
+
+.portfolio-section {
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 2rem;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.pdf-container {
+    width: 100%;
+    margin-bottom: 1rem;
+}
+
+.pdf-viewer {
+    width: 100%;
+    min-height: 800px;
+    border: 1px solid #e0e0e0;
+    border-radius: 4px;
+}
+
+.pdf-fallback {
+    text-align: center;
+    padding: 1rem;
+    background-color: #f8f9fa;
+    border-radius: 4px;
+    font-size: 0.9rem;
+    color: #666;
+}
+
+.pdf-fallback a {
+    color: #0066cc;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.pdf-fallback a:hover {
+    text-decoration: underline;
+}
+
+.footer {
+    background-color: #fff;
+    border-top: 1px solid #e0e0e0;
+    padding: 2rem 0;
+    text-align: center;
+    color: #666;
+    font-size: 0.9rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .header-content {
+        flex-direction: column;
+        text-align: center;
+        gap: 1rem;
+    }
+
+    .logo {
+        height: 50px;
+    }
+
+    .name {
+        font-size: 1.5rem;
+    }
+
+    .contact-email,
+    .contact-phone {
+        font-size: 0.85rem;
+    }
+
+    .main-content {
+        padding: 2rem 1rem;
+    }
+
+    .portfolio-section {
+        padding: 1.5rem;
+    }
+
+    .pdf-viewer {
+        min-height: 600px;
+    }
+}
+
+@media (max-width: 480px) {
+    .header {
+        padding: 1.5rem 0;
+    }
+
+    .logo {
+        height: 40px;
+    }
+
+    .name {
+        font-size: 1.25rem;
+    }
+
+    .contact-email,
+    .contact-phone {
+        font-size: 0.8rem;
+    }
+
+    .main-content {
+        padding: 2rem 1rem;
+    }
+
+    .portfolio-section {
+        padding: 1.5rem;
+    }
+
+    .pdf-viewer {
+        min-height: 500px;
+    }
+}
+
