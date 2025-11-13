@@ -192,4 +192,11 @@ body {
     .pdf-viewer {
         min-height: 500px;
     }
+    @media (min-width: 1024px) {
+  .header-content {
+    justify-content: center;
+    text-align: center;
+  }
 }
+}
+
